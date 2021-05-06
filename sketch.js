@@ -36,23 +36,23 @@ function draw() {
   if (height !== undefined){
     if(keyDown(LEFT_ARROW)){
       updateHeight(-10,0);
-      //balloon.addAnimation("hotAirBalloon",balloonImage2);
+      balloon.addAnimation("hotAirBalloon",balloonImage2);
       
     }
     else if(keyDown(RIGHT_ARROW)){
       updateHeight(10,0);
-      //balloon.addAnimation("hotAirBalloon",balloonImage2);
+      balloon.addAnimation("hotAirBalloon",balloonImage2);
       
     }
     else if(keyDown(UP_ARROW)){
       updateHeight(0,-10);
-      //balloon.addAnimation("hotAirBalloon",balloonImage2);
-      //balloon.scale = balloon.scale -0.01;
+      balloon.addAnimation("hotAirBalloon",balloonImage2);
+      balloon.scale = balloon.scale -0.01;
     }
     else if(keyDown(DOWN_ARROW)){
       updateHeight(0,10);
-      //balloon.addAnimation("hotAirBalloon",balloonImage2);
-      //balloon.scale = balloon.scale-0.01;
+      balloon.addAnimation("hotAirBalloon",balloonImage2);
+      balloon.scale = balloon.scale-0.01;
     }
     drawSprites();
   }
